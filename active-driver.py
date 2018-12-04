@@ -161,23 +161,23 @@ while True:
 
                         ###Twilio message sending
                         ###Twilio message sending
-                        #send the message to a friend
+                        #send the message to a friend/family
                         # Account sid provided by Twilio
-                        account_sid = 'AC44b0d4408c851df316883a65a9752493'
+                        account_sid = ''
                         #Authentcation token provided by Twilio
-                        auth_token = 'f53c931acac9b23ef0a1940c9af95186'
+                        auth_token = ''
 
                         # Phone number of the friend where we need to send the text message
-                        friendsPhone = '+13437778221'
+                        friendsPhone = ''
                         # Phone number given by Twilio service
-                        TwilioNumber = '+14387008598'
+                        TwilioNumber = ''
 
                         client = Client(account_sid, auth_token)
 
                         client.messages.create(
                             to=friendsPhone,
                             from_=TwilioNumber,
-                            body='Hey there! Adarsh is sleeping while driving. Talk to him and save his life! ' + u'\U0001f680')
+                            body='Hey there! Your friend is sleeping while driving. Talk to him and save his life! ' + u'\U0001f680')
                         print("Logs: A message has been sent to the friend of the driver")
 
                 #use open cv for showing text "sleeping alert" on  the frame
