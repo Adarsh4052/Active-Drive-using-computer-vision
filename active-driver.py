@@ -1,9 +1,4 @@
-#This project was developed by Adarsh Verma (Student#300044891) and Manan Singh (Student#300027661)
-# at University of Ottawa
-
-
 #importing packages
-# scipy.spatial for convex hulls and triangulations calculations
 from scipy.spatial import distance as dist
 # threading for multiple threads can run together
 from threading import Thread
@@ -37,7 +32,7 @@ alert_sound_file = "funny-alarm.mp3"
 EAR_limit = 0.25
 
 #40 Frames should be on or below EAR_LIMIT to consider person is sleeping
-EAR_UNDER_LIMIT_FRAMES = 30
+EAR_UNDER_LIMIT_FRAMES = 25
 
 # defining a counter for the frames and set initial value to zero
 FRAME_COUNTER = 0
